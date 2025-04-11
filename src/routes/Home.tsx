@@ -7,7 +7,11 @@ const Home = () => {
     <div>
       Home
       {Users.results.map((user) => (
-        <li key={user.id}>{user.first}</li>
+        <ul>
+          <li key={user.id}>
+            {user.first} <span>{user.last}</span>
+          </li>
+        </ul>
       ))}
     </div>
   );
